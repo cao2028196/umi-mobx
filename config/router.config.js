@@ -19,7 +19,7 @@ export default [
           {
             path: '/index',
             name: 'myTasts.firstView',
-            component: './index',
+            component: './Index/index',
           },
         ]
       }

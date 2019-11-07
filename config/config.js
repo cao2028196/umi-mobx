@@ -12,8 +12,17 @@ export default {
       'umi-plugin-react',
       {
         antd: true,
+        routes: {
+          exclude: [/stores\//]
+        }
       },
     ],
+    [
+      "umi-plugin-mobx-state-tree",
+      {
+        exclude: [/^\$/] //这里是以$开头的stores不会被引用
+      }
+    ]
   ],
   targets: {
     ie: 9,

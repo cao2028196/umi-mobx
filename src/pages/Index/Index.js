@@ -8,12 +8,15 @@ class Index extends React.Component{
 
   render () {
     console.log(this.props.stores)
+    const {base} = this.props.stores
     return (
       <div className={styles.index}>
         list:{this.props.stores.home.name}
-        <ul>
-
-        </ul>
+        <div>
+          {this.props.stores.base.count}
+          <input type="button" value="加1" onClick={()=> base.addCount()} />
+          <input type="button" value="变为10" onClick={()=> base.bigger()} />
+        </div>
       </div>
     )
   }

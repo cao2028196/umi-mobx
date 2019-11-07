@@ -9,9 +9,13 @@ const Todo = types
     function setTitle(newTitle) {
       self.name = newTitle;
     }
+    function setTitle2(newTitle) {
+      self.name = newTitle+2;
+    }
 
     return {
-      setTitle
+      setTitle,
+      setTitle2
     };
   });
 

@@ -11,7 +11,7 @@ class Index extends React.Component{
     const {base} = this.props.stores
     return (
       <div className={styles.index}>
-        list:{this.props.stores.home.name}
+        name:{this.props.stores.home.name}
         <div>
           {this.props.stores.base.count}
           <input type="button" value="加1" onClick={()=> base.addCount()} />

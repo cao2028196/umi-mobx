@@ -2,7 +2,7 @@ import { types } from "mobx-state-tree";
 
 const Todo = types
   .model({
-    name: "123",
+    name: "jack",
     done: false
   })
   .actions(self => {
